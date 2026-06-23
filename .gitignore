@@ -1,0 +1,30 @@
+# Binaries
+/bin/
+*.exe
+*.out
+
+# Test & coverage
+*.test
+coverage.out
+coverage.html
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Logs
+*.log
+
+# agent
+.agent/
+.agents/
+.claude/
+docs/
+skills-lock.json

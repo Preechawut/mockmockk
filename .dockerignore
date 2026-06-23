@@ -1,0 +1,7 @@
+.git
+.agents
+docs
+bin
+*.md
+.env
+deployments
