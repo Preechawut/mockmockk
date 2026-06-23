@@ -13,7 +13,7 @@ func NewRouter(mockmockH *mockmock.Handler) *gin.Engine {
 	gin.SetMode(gin.ReleaseMode)
 
 	r := gin.New()
-	r.Use(httputil.RequestID(), gin.Logger(), gin.Recovery())
+	r.Use(httputil.CORS(), httputil.RequestID(), gin.Logger(), gin.Recovery())
 
 	r.GET("/", gin.WrapF(web.Handler()))
 	mockmockH.RegisterRoutes(r)
